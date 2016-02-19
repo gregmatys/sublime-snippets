@@ -1,5 +1,4 @@
 # sublime-snippets
-======
 
 ## Install
 
