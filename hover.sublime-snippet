@@ -1,0 +1,9 @@
+<snippet>
+    <content><![CDATA[@include hover {
+    ${1}
+}
+]]></content>
+    
+    <tabTrigger>hover</tabTrigger>
+    <scope>source.scss</scope>
+</snippet>
