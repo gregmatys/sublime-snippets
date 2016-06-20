@@ -1,0 +1,27 @@
+<snippet>
+	<content><![CDATA[/// <reference path="../definitions/jquery/jquery.d.ts" />
+/// <reference path="../components/Component.ts" />
+
+module Components {
+
+
+
+    export class $1 extends Components.Component {
+
+
+
+        constructor(protected view: JQuery, protected options) {
+            super(view, options);
+
+
+            $2
+        }
+
+
+
+    }
+}
+]]></content>
+	<tabTrigger>component</tabTrigger>
+	<scope>source.ts</scope>
+</snippet>
