@@ -1,7 +1,0 @@
-<snippet>
-    <content><![CDATA[@include size-in-ems($1);]]></content>
-    <!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
-    <tabTrigger>size</tabTrigger>
-    <!-- Optional: Set a scope to limit where the snippet will trigger -->
-    <scope>source.scss</scope>
-</snippet>
