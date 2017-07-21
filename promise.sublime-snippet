@@ -1,8 +1,9 @@
 <snippet>
     <content><![CDATA[new Promise<${1:boolean}>((resolve, reject) => {
-    $2
-    resolve(true);
-});]]></content>
-    <tabTrigger>promise</tabTrigger>
+    ${3}
+    resolve(${2:true});
+});
+]]></content>
+    <tabTrigger>new Promise</tabTrigger>
     <scope>source.ts</scope>
 </snippet>
