@@ -18,7 +18,15 @@ module Components {
         }
 
 
+        public resize(wdt?: number, hgt?: number, breakpoint?: IBreakpoint): void {
+            $3
+        }
 
+
+        public destroy(): void {
+            $4
+            super.destroy();
+        }
     }
 }
 ]]></content>
