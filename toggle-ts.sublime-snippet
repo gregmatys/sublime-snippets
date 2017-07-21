@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[public toggle(show?: boolean, fast?: boolean): void {
+    if (typeof show !== 'undefined') {
+        if (!!show && !this.shown) {
+            this.show(fast);
+        } else if (!show && !!this.shown) {
+            this.hide(fast);
+        }
+    } else {
+        (!!this.shown ? (fast) => this.hide(fast) : (fast) => this.show(fast))(fast);
+    }
+}]]></content>
+    <description>Typescript : toggle</description>
+    <tabTrigger>toggle</tabTrigger>
+    <scope>source.ts</scope>
+</snippet>
