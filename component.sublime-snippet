@@ -10,8 +10,12 @@ module Components {
 
 
 
-        constructor(protected view: JQuery, protected options) {
+        constructor(protected view: JQuery, protected options?) {
             super(view, options);
+
+            if (typeof options === 'object') {
+                $.extend(this.settings, options);
+            }
 
 
             $2
