@@ -1,5 +1,5 @@
 <snippet>
-	<content><![CDATA[/// <reference path="../definitions/jquery/jquery.d.ts" />
+    <content><![CDATA[/// <reference path="../definitions/jquery/jquery.d.ts" />
 /// <reference path="../components/Component.ts" />
 
 module Components {
@@ -9,20 +9,21 @@ module Components {
     export class $1 extends Components.Component {
 
 
+        private settings;
+
 
         constructor(protected view: JQuery, protected options?) {
             super(view, options);
 
             if (typeof options === 'object') {
-                $.extend(this.settings, options);
+                \$.extend(this.settings, options);
             }
-
 
             $2
         }
 
 
-        public resize(wdt?: number, hgt?: number, breakpoint?: IBreakpoint): void {
+        public resize(wdt?: number, hgt?: number, breakpoint?: IBreakpoint, changed?: boolean): void {
             $3
         }
 
@@ -34,6 +35,6 @@ module Components {
     }
 }
 ]]></content>
-	<tabTrigger>component</tabTrigger>
-	<scope>source.ts</scope>
+    <tabTrigger>component</tabTrigger>
+    <scope>source.ts</scope>
 </snippet>
