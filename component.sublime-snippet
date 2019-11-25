@@ -1,6 +1,5 @@
 <snippet>
-    <content><![CDATA[/// <reference path="../definitions/jquery/jquery.d.ts" />
-/// <reference path="../components/Component.ts" />
+    <content><![CDATA[/// <reference path="../references.d.ts" />
 
 module Components {
 
@@ -15,17 +14,15 @@ module Components {
         constructor(protected view: JQuery, protected options?) {
             super(view, options);
 
-            if (typeof options === 'object') {
-                \$.extend(this.settings, options);
-            }
+            this.settings = $.extend(this.settings, options || view.data('options') || {});
 
             $2
         }
 
 
-        public resize(wdt?: number, hgt?: number, breakpoint?: IBreakpoint, changed?: boolean): void {
+        public resize = (wdt?: number, hgt?: number, breakpoint?: Project.IBreakpoint, changed?: boolean): void => {
             $3
-        }
+        };
 
 
         public destroy(): void {
